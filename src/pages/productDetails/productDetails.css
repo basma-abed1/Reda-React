@@ -1,0 +1,124 @@
+:root{
+  --main-color:#0090f0;
+  --p_color:#7b7b7b;
+  --white_color:#fff;
+  --color_heading:#253237;
+  --body_color:#d6d6d6d5;
+  --border-color: #d6d6d6d5;
+}
+.item_details{
+    padding:50px 0 50px;
+    
+}
+.item_details .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item_details .imgs_item{
+    width:40%;
+
+}
+.item_details .imgs_item .sm_img{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.item_details .imgs_item .sm_img img{
+    width: 24%;
+
+}
+.item_details .details_item{
+    width:58%;
+
+}
+.item_details .details_item .name{
+    margin-bottom: 30px;
+    color: var(--main-color);
+}
+.item_details .details_item .stars{
+   margin: 15px 0;
+    display: flex;
+    gap: 5px;
+}
+
+.item_details .details_item .stars svg{
+    font-size:18px;
+    fill: rgb(225, 194, 20);
+    
+}
+.item_details .details_item .price{
+    font-size: 22px;
+    margin: 20px 0;
+}
+.item_details .details_item h5{
+   font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 16px0;
+}
+.item_details .details_item .descripion{
+    line-height: 1.5;
+}
+.item_details .details_item .stock{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.item_details .details_item .btn{
+    font-size: 16px;
+    border-radius:2px ;
+    padding: 12px 15px;
+    border: 1px solid var(--main-color);
+
+}
+.item_details .details_item .btn.in_cart{
+  background: transparent;
+  color: var(--main-color);
+  pointer-events: none;
+}
+.item_details .details_item .btn.in_cart{
+    background: var(--main-color);
+
+}
+.item_details .details_item .btn.in_cart svg{
+    fill: var(--white_color);
+}
+.item_details .details_item .btn svg{
+    font-size: 20px;
+}
+
+.item_details .details_item .icons{
+   display: flex;
+    transition: 0.3s;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.item_details .details_item .icons span{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.item_details .details_item .icons span:hover{
+    background: var(--main-color);
+}
+.item_details .details_item .icons svg:hover{
+    fill:var(--white_color);
+    transition: 0.3s;
+}
+.loading_item .item_details .imgs_item{
+   height: 600px;
+}
+.loading_item .item_details .imgs_item .details_item{
+    height: 600px;
+    padding-top: 100px;
+}
+.loading_item .item_details .imgs_item .details_item h5{
+    margin-bottom: 40px;
+    height: 30px;
+}
