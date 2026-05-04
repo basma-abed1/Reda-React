@@ -1,4 +1,6 @@
-import React, { useContext } from 'react'
+import React from 'react'
+
+import { useContext } from 'react'
 import { CartContext } from '../../components/context/CartContext'
 import { FaTrashAlt } from "react-icons/fa";
 import './cart.css'
@@ -8,7 +10,6 @@ import PageTransition from '../../components/PageTransition.js';
 function Cart() {
     const { cartItems, increseQuntity, decreaseQuntity, removefromCart } = useContext(CartContext)
 
-    // حساب المجموع مع التأكد من تحويل القيم لأرقام لتجنب ظهور NaN
     const total = cartItems.reduce((acc, item) => {
         const price = Number(item.price) || 0;
         const qty = Number(item.quantity) || 0;

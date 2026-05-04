@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+
+import { useEffect, useState } from 'react'
 import { FaSearch } from "react-icons/fa"
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 

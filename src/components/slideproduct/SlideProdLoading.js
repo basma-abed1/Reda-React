@@ -6,7 +6,7 @@ function SlideProdLoading() {
            <div className='slide_products slide'>
       <div className='container'>
         <div className='top_slide'>
-          <h2 className='skeltion'></h2>
+          <h2 className='skeltion'>.</h2>
           <p className='skeltion'></p>
         </div>
         

@@ -1,4 +1,6 @@
-import React, { useContext } from 'react'
+import React from 'react'
+
+import { useContext } from 'react'
 import { CartContext } from '../../components/context/CartContext'
 import PageTransitionEvent from '../../components/PageTransition'
 import Product from '../../components/slideproduct/Product'

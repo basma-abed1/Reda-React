@@ -1,4 +1,3 @@
-import React from 'react'
 
 function ProductDetailsLoading() {
   return (
@@ -10,11 +9,11 @@ function ProductDetailsLoading() {
                   </div>
         
                   <div className='details_item'>
-                     <h5 className='loading_TextDetails skeltion'></h5>
-                     <h5 className='loading_TextDetails skeltion'></h5>
-                     <h5 className='loading_TextDetails skeltion'></h5>
-                     <h5 className='loading_TextDetails skeltion'></h5>
-                     <h5 className='loading_TextDetails skeltion'></h5>
+                     <h5 className='loading_TextDetails skeltion'> </h5>
+                     <h5 className='loading_TextDetails skeltion'> </h5>
+                     <h5 className='loading_TextDetails skeltion'> </h5>
+                     <h5 className='loading_TextDetails skeltion'> </h5>
+                     <h5 className='loading_TextDetails skeltion'> </h5>
 
                       
                   </div>

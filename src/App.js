@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+import React from 'react'
+
 import './App.css';
 import TopHeader from './components/header/TopHeader';
 import ButtonHeader from './components/header/ButtonHeader';

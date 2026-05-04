@@ -1,4 +1,6 @@
-import React, { useContext } from 'react'
+import React from 'react'
+
+import { useContext } from 'react'
 import { MdOutlineStar } from "react-icons/md";
 import { IoStarHalf } from "react-icons/io5";
 import { FaCartShopping, FaHeart, FaShare, FaCheck } from "react-icons/fa6";

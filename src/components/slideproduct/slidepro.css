@@ -160,13 +160,11 @@
 .product .status_cart svg{
     color: rgb(27, 159, 27);
 }
-/* خلي السلايدر عنده مساحة تحت */
 .mySwiper {
   padding-bottom: 40px;
   position: relative;
 }
 
-/* تحريك النقاط لتحت */
 .swiper-pagination {
   position: absolute;
   bottom: 0px !important;
