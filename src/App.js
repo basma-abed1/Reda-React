@@ -1,4 +1,5 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom';
 
 import './App.css';
 import TopHeader from './components/header/TopHeader';
@@ -16,13 +17,18 @@ import Favorites from './pages/favorites/Favorites';
 import LogIn from './pages/logIn/LogIn';
 
 function App() {
+  const location = useLocation();
+
   return (
+    
     <div className="App">
-      
-      <header>
-        <TopHeader />
-        <ButtonHeader />
-      </header>
+
+       {location.pathname !== "/" && (
+        <header>
+          <TopHeader />
+          <ButtonHeader />
+        </header>
+      )}
 
       <Toaster 
         position='bottom-right' 
@@ -42,9 +48,11 @@ function App() {
 
      
       <main>
+
         <AnimatePresence>
           <Routes>
-            <Route path='/' element={<Home />} />
+            <Route path='/' element={<LogIn />} />
+            <Route path='/home' element={<Home />} />
             <Route path='/cart' element={<Cart />} />
             <Route path='/search' element={<SearchResult />} />
             <Route path='/favorites' element={<Favorites />} />

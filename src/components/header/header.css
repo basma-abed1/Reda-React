@@ -125,10 +125,10 @@
     cursor: pointer;
     background: var(--main-color);
 }
-header{
-    position: fixed;
+header {
+    position: sticky; /* بدلاً من fixed */
     top: 0;
-    left:0 ;
+    left: 0;
     right: 0;
     z-index: 1000;
     background-color: var(--white_color);

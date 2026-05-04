@@ -3,13 +3,12 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import { IoMdMenu, IoMdArrowDropdownCircle } from "react-icons/io";
 import { Link, useLocation } from 'react-router-dom'
-import { CiLogin } from "react-icons/ci";
-import { IoPersonAddSharp } from "react-icons/io5";
+
 
 
 
 const navlinks = [
-  { title: "Home", link: "/" },
+  { title: "Home", link: "/home" },
   { title: "About", link: "/about" },
   { title: "Accessories", link: "/accessories" },
   { title: "Blog", link: "/blog" },
@@ -65,10 +64,7 @@ export default function ButtonHeader() {
             </div>
         </nav>
 
-        <div className='sign_reges_icon'>
-          <Link to="/login"> <CiLogin /> </Link>
-          <Link to="/register"> <IoPersonAddSharp /></Link>
-        </div>
+        
 
       </div>
     </div>

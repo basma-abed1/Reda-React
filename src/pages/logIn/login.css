@@ -1,50 +1,157 @@
-
-body {
-	background: #eee !important;	
+.main {
+    margin: 0;
+    padding: 0;
+    background: url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.wrapper {	
-	margin-top: 80px;
-  margin-bottom: 80px;
+*, :after, :before { box-sizing: border-box; }
+
+.login-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 42, 0.8);
+    position: absolute;
+    z-index: 999;
 }
 
-.form-signin {
-  max-width: 380px;
-  padding: 15px 35px 45px;
-  margin: 0 auto;
-  background-color: #fff;
-  border: 1px solid rgba(0,0,0,0.1);  
+.login-html {
+    width: 100%;
+    max-width: 450px;
+    min-height: 580px;
+    position: relative;
+    padding: 20px 50px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
 
-  .form-signin-heading,
-	.checkbox {
-	  margin-bottom: 30px;
-	}
+.login-html .tab {
+    font-size: 18px;
+    margin-right: 15px;
+    padding-bottom: 5px;
+    margin: 0 15px 10px 0;
+    display: inline-block;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    color: #64748b; 
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
 
-	.checkbox {
-	  font-weight: normal;
-	}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab {
+    color: #2563eb;
+    border-color: #2563eb;
+}
 
-	.form-control {
-	  position: relative;
-	  font-size: 16px;
-	  height: auto;
-	  padding: 10px;
-		@include box-sizing(border-box);
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check {
+    display: none;
+}
 
-		&:focus {
-		  z-index: 2;
-		}
-	}
+.login-form {
+    min-height: 345px;
+    position: relative;
+    perspective: 1000px;
+    margin-top: 30px;
+}
 
-	input[type="text"] {
-	  margin-bottom: -1px;
-	  border-bottom-left-radius: 0;
-	  border-bottom-right-radius: 0;
-	}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: all .4s linear;
+}
 
-	input[type="password"] {
-	  margin-bottom: 20px;
-	  border-top-left-radius: 0;
-	  border-top-right-radius: 0;
-	}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm,
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm {
+    transform: rotate(0);
+}
+
+.login-form .group {
+    margin-bottom: 20px;
+}
+
+.login-form .group .label {
+    color: #1e293b;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.login-form .group .input,
+.login-form .group .button {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    padding: 12px 20px;
+}
+
+.login-form .group .input {
+    border: 1px solid #cbd5e1;
+    background: #f8fafc;
+    color: #334155;
+    outline: none;
+    transition: all .2s;
+}
+
+.login-form .group .input:focus {
+    border-color: #2563eb;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.login-form .group .button {
+    border: none;
+    background: #2563eb;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background .3s;
+}
+
+.login-form .group .button:hover {
+    background: #1d4ed8;
+}
+
+.hr {
+    height: 1px;
+    margin: 30px 0;
+    background: #e2e8f0;
+}
+
+.foot-lnk {
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.foot-lnk a {
+    color: #2563eb;
+    font-weight: 500;
+}
+
+.foot-lnk a:hover {
+    text-decoration: underline;
+}
+
+.login-form .group .check:checked + label {
+    color: #2563eb;
 }
